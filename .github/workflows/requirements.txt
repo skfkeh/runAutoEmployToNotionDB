@@ -1,0 +1,7 @@
+papermill
+notebook
+numpy
+requests
+beautifulsoup4
+pandas
+
