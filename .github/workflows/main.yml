@@ -24,4 +24,4 @@ jobs:
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
         run: |
-          python scripts/update_notion.py
+          python blob/main/scripts/update_notion.py
