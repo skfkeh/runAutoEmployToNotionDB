@@ -22,6 +22,8 @@ jobs:
       run: |
         pip install papermill notebook
         pip install notion-database pendulum
+        pip install requests
+        pip install numpy as np
 
     - name: Debug — show folder structure
       run: |
