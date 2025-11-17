@@ -11,6 +11,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Debug — show directory structure
+        run: |
+          pwd
+          ls -R .
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -23,5 +28,4 @@ jobs:
       - name: Run Notion Update Script
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-        run: |
-          python blob/main/scripts/update_notion.py
+        run: python scripts/update_notion.py
