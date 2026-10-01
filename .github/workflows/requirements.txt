@@ -5,3 +5,4 @@ pandas
 requests
 beautifulsoup4
 ipykernel
+notion-database==1.4.1
