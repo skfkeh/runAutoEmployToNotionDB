@@ -26,8 +26,6 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install notebook papermill numpy pandas requests beautifulsoup4 notion-database pendulum
         pip install notion-database==1.4.1
-        - name: Checkout repo
-          uses: actions/checkout@v3
 
     - name: Debug — show folder structure
       run: |
